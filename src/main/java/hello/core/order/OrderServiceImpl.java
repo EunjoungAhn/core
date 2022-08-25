@@ -16,6 +16,7 @@ public class OrderServiceImpl implements OrderService {
         Member member = memberRepository.findById(memberId);
         int dicountPrice = discountPolicy.dicount(member, itemPrice);
 
+
         return new Order(memberId, itemName, itemPrice, dicountPrice);
     }
 }
