@@ -1,6 +1,5 @@
-package hello.core.singletion;
+package hello.core.singleton;
 
-import hello.core.singletion.StatefulService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
