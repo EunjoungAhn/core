@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+@Component //컴포넌트 적용하면 기본이 앞글자 소문에 memoryMemberRepository가 된다.
 public class MemoryMemberRepository implements MemberRepository{
 
     //HashMap이 동시성 이슈가 있을 수 있지만, 개발 용도로만 쓰고 넘어간다.
