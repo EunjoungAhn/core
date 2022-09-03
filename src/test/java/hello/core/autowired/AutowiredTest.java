@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public class AutowiredTest {
 
-    @Test
+   /* @Test
     void AutowiredOption(){
         ApplicationContext ac = new AnnotationConfigApplicationContext(TestBean.class);
         //ac.getBean();
@@ -33,5 +33,5 @@ public class AutowiredTest {
         public void setNoBean3(Optional<Member> member) {
             System.out.println("setNoBean3 = " + member);
         }
-    }
+    }*/
 }
