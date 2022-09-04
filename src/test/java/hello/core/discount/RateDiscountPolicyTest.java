@@ -19,9 +19,9 @@ class RateDiscountPolicyTest {
         //given
         Member member = new Member(1L, "memberVIP", Grade.VIP);
         //when
-        int dicount = discountPolicy.dicount(member, 10000);
+        int discount = discountPolicy.discount(member, 10000);
         //then
-        assertThat(dicount).isEqualTo(1000);
+        assertThat(discount).isEqualTo(1000);
     }
 
     //실패 테스트도 만들어 봐야 한다.
@@ -31,9 +31,9 @@ class RateDiscountPolicyTest {
         //given
         Member member = new Member(2L, "memberBASIC", Grade.BASIC);
         //when
-        int dicount = discountPolicy.dicount(member, 10000);
+        int discount = discountPolicy.discount(member, 10000);
         //then
-        assertThat(dicount).isEqualTo(0);
+        assertThat(discount).isEqualTo(0);
     }
 
 }
