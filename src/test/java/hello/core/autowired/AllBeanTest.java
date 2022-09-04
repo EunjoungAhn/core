@@ -13,7 +13,6 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.*;
 
 public class AllBeanTest {
-
     @Test
     void findAllBean() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
